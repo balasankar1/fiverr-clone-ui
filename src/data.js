@@ -1,4 +1,4 @@
-const cards = [
+export const cards = [
   {
     id: 1,
     title: "AI Artists",
@@ -182,4 +182,3 @@ export const gigs = [
     username: "Wilton Hunt",
   },
 ];
-export default cards;

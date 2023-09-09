@@ -1,14 +1,16 @@
 import React from "react";
-import "./CatCard.scss";
 import { Link } from "react-router-dom";
+import "./CatCard.scss";
 
-export default function CatCard({ desc, title }) {
+function CatCard({ card }) {
   return (
     <Link to="/gigs?cat=design">
-      <div className="catcard">
-        <span className="desc">{desc}</span>
-        <span className="title">{title}</span>
+      <div className="catCard">
+        <img src={card.img} alt="" />
+        <span className="desc">{card.desc}</span>
+        <span className="title">{card.title}</span>
       </div>
     </Link>
   );
 }
+export default CatCard;
